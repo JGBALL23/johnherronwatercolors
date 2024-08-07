@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Navigation Styles */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #63783d; /* Light brown but darker */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 45px; /* Increased text size for better readability */
+    text-align: center;
+    font-family: inherit;
+}
+
+nav ul li a:hover {
+    background-color: white; /* Gold color for hover effect */
+    color: black;
+}
+
+.portfolio-categories {
+    display: none;
+    position: absolute;
+    background-color: #63783d;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 200px; /* Ensure it matches the width of the parent element */
+    text-align: left;
+}
+
+.portfolio-categories li a {
+    font-size: 20px; /* Smaller text for sub-menu */
+    padding: 10px;
+    display: block;
+    background-color: #63783d;
+    width: 100%;
+    text-align: left;
+    font-family: inherit;
+}
+
+nav ul li:hover .portfolio-categories {
+    display: block;
+}
+
+.main-content {
+    margin-left: 220px; /* Adjust to accommodate the fixed nav */
+    padding: 20px;
+    box-sizing: border-box;
+    width: calc(100% - 220px);
+}
+
+.header {
+    text-align: center;
+    padding: 5%;
+    padding-bottom: 1%;
+    font-size: 5em;
+}
+
+.label {
+    text-align: right;
+    margin-right: 20px;
+    font-size: 0.3em; /* Adjust font size to match across all pages */
+    color: #63783d;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 5px 10px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0; /* Remove padding */
+    width: 100%;
+    margin-left: 0; /* Remove margin */
+    box-sizing: border-box;
+}
+
+.image-container img {
+    width: 100vw; /* Full viewport width */
+    height: auto;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For larger screens, dropdown shows to the side */
+@media (min-width: 768px) {
+    .portfolio-categories {
+        left: 100%;
+        top: 0;
+    }
+}
+
+/* Mobile Devices (Portrait) (480px to 767px) */
+@media (max-width: 767px) {
+    nav {
+        top: auto;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav ul {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    nav ul li {
+        display: inline-block;
+        width: auto;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .portfolio-categories {
+        top: auto;
+        bottom: 100%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        background-color: #63783d; /* Ensure background color is applied */
+    }
+
+    .portfolio-categories li a {
+        display: block;
+        width: 100%; /* Ensure the width covers the background */
+        box-sizing: border-box; /* Include padding in width */
+        white-space: nowrap; /* Prevent text wrapping */
+        text-align: center;
+    }
+
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .header {
+        margin-left: 0;
+    }
+
+    .image-container {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .label {
+        margin-left: 0;
+    }
+}
+
+/* Small Mobile Devices (Portrait) (up to 479px) */
+@media (max-width: 479px) {
+    nav {
+        top: auto;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav ul {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    nav ul li {
+        display: inline-block;
+        width: auto;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .portfolio-categories {
+        top: auto;
+        bottom: 100%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        background-color: #63783d; /* Ensure background color is applied */
+    }
+
+    .portfolio-categories li a {
+        display: block;
+        width: 100%; /* Ensure the width covers the background */
+        box-sizing: border-box; /* Include padding in width */
+        white-space: nowrap; /* Prevent text wrapping */
+        text-align: center;
+    }
+
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .header {
+        margin-left: 0;
+    }
+
+    .image-container {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .label {
+        margin-left: 0;
+    }
+}

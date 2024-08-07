@@ -1,0 +1,116 @@
+body {
+    background-color: white;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* Basic Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Navigation Styles */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #2d4880; /* Light brown but darker */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 45px; /* Increased text size for better readability */
+}
+
+/* Section Styles */
+section {
+    margin-left: 220px;
+    padding: 20px;
+    min-height: 100vh;
+    border-left: 1px solid #ccc;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    background-size: cover; /* Ensure background covers the section */
+    background-position: center; /* Center the background image */
+}
+
+#city1 {
+    background-image: url(images/Untitled-5.png);
+}
+
+#city2 {
+    background-image: url(images/Untitled-13.png);
+}
+
+#city3 {
+    background-image: url(images/Untitled-14.png);
+}
+#city4 {
+    background-image: url(images/Untitled-15.png);
+}
+#city5 {
+    background-image: url(images/Untitled-17.png);
+}
+#city6 {
+    background-image: url(images/Untitled-18.png);
+}
+
+/* navigation */
+/* Navigation Styles */
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 45px; /* Increased text size for better readability */
+}
+
+nav ul li a:hover {
+    background-color: white; /* Gold color for hover effect */
+    color: black;
+}
+
+.portfolio-categories {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: #2d4880;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.portfolio-categories li a {
+    font-size: 20px; /* Smaller text for sub-menu */
+    padding: 10px;
+}
+
+nav ul li:hover .portfolio-categories {
+    display: block;
+}

@@ -1,0 +1,37 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif; /* Set a generic font */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and Navigation Styling */
+header {
+    background-color: #8C6239; /* Similar brown color */
+    color: white;
+    padding: 20px 0; /* Adjust the padding to increase/decrease space */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline; /* Display list items in a row */
+    margin-right: 20px; /* Space between the items */
+}
+
+nav ul li a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Font size similar to the image */
+    font-weight: bold; /* Bold text */
+}
+
+/* Hover Effect */
+nav ul li a:hover {
+    color: #D9D9D9; /* Lighter color on hover */
+}
